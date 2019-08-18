@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.peacetrue</groupId>
+    <artifactId>peacetrue-dependencies</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Peacetrue Dependencies</name>
+    <description>Peacetrue Dependencies</description>
+    <url>https://github.com/peacetrue/peacetrue-dependencies</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/peacetrue</url>
+    </scm>
+    <developers>
+        <developer>
+            <id>xiayx</id>
+            <name>xia youxue</name>
+            <email>xiayouxue@hotmail.com</email>
+            <roles>
+                <role>Project lead</role>
+            </roles>
+        </developer>
+    </developers>
+    <properties>
+        <!-- Dependency versions -->
+
+        <!-- Plugin versions -->
+
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>sonatype-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+    <dependencyManagement>
+        <dependencies>
+            <!-- Peacetrue -->
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-core</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-jackson</artifactId>
+                <version>1.2.2-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-asm</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-associate</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-enum</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-export</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-jpa</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-export</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-lock</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-mybatis</artifactId>
+                <version>1.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-validation</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-result</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-result-builder</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-result-exception</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-result-exception-support</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-result-web</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-result-extend</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-spring</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.serialize</groupId>
+                <artifactId>peacetrue-serialize-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.serialize</groupId>
+                <artifactId>peacetrue-serialize-java</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.serialize</groupId>
+                <artifactId>peacetrue-serialize-java</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.serialize</groupId>
+                <artifactId>peacetrue-serialize-jackson</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.task</groupId>
+                <artifactId>peacetrue-task-service-api</artifactId>
+                <version>2.3.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.task</groupId>
+                <artifactId>peacetrue-task-service-mybatis</artifactId>
+                <version>2.3.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.task</groupId>
+                <artifactId>peacetrue-task-controller</artifactId>
+                <version>2.3.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.task</groupId>
+                <artifactId>peacetrue-task-executor-api</artifactId>
+                <version>2.3.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.task</groupId>
+                <artifactId>peacetrue-task-executor-impl</artifactId>
+                <version>2.3.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.modelgenerator</groupId>
+                <artifactId>peacetrue-modelgenerator</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.modelgenerator</groupId>
+                <artifactId>peacetrue-modelgenerator-template</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.modelgenerator</groupId>
+                <artifactId>peacetrue-modelgenerator-template-aum</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.modelgenerator</groupId>
+                <artifactId>peacetrue-modelgenerator-model-datasource</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.modelgenerator</groupId>
+                <artifactId>peacetrue-modelgenerator-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- Third Party -->
+            
+
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+
+            </plugins>
+        </pluginManagement>
+        <plugins>
+
+        </plugins>
+    </build>
+</project>
