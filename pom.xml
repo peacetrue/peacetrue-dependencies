@@ -15,7 +15,7 @@
     <name>Peacetrue Dependencies</name>
     <description>Peacetrue Dependencies</description>
     <url>https://github.com/peacetrue/peacetrue-dependencies</url>
-    
+
     <properties>
         <!-- Dependency versions -->
 
@@ -29,7 +29,7 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
-    
+
     <dependencyManagement>
         <dependencies>
             <!-- Peacetrue -->
@@ -173,6 +173,7 @@
                 <artifactId>peacetrue-task-executor-impl</artifactId>
                 <version>2.3.0-SNAPSHOT</version>
             </dependency>
+            <!--Peacetrue modelgenerator-->
             <dependency>
                 <groupId>com.github.peacetrue.modelgenerator</groupId>
                 <artifactId>peacetrue-modelgenerator</artifactId>
@@ -199,8 +200,35 @@
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 
+            <!--Peacetrue log-->
+            <dependency>
+                <groupId>com.github.peacetrue.log</groupId>
+                <artifactId>peacetrue-log-service-api</artifactId>
+                <version>2.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.log</groupId>
+                <artifactId>peacetrue-log-service-mybatis</artifactId>
+                <version>2.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.log</groupId>
+                <artifactId>peacetrue-log-controller</artifactId>
+                <version>2.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.log</groupId>
+                <artifactId>peacetrue-log-aspect</artifactId>
+                <version>2.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.log</groupId>
+                <artifactId>peacetrue-log-type</artifactId>
+                <version>2.0-SNAPSHOT</version>
+            </dependency>
+
             <!-- Third Party -->
-            
+
 
         </dependencies>
     </dependencyManagement>
