@@ -29,6 +29,7 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
+    
     <dependencyManagement>
         <dependencies>
             <!-- Peacetrue -->
@@ -80,7 +81,7 @@
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-mybatis</artifactId>
-                <version>1.1-SNAPSHOT</version>
+                <version>1.1.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
@@ -198,6 +199,7 @@
 
         </dependencies>
     </dependencyManagement>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -205,7 +207,19 @@
             </plugins>
         </pluginManagement>
         <plugins>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
