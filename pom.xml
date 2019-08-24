@@ -147,11 +147,6 @@
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.serialize</groupId>
-                <artifactId>peacetrue-serialize-java</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.peacetrue.serialize</groupId>
                 <artifactId>peacetrue-serialize-jackson</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
