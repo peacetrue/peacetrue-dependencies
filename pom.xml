@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.peacetrue</groupId>
     <artifactId>peacetrue-dependencies</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Peacetrue Dependencies</name>
     <description>Peacetrue Dependencies</description>
@@ -81,7 +81,7 @@
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-mybatis</artifactId>
-                <version>1.1.2-SNAPSHOT</version>
+                <version>1.1.3-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
@@ -132,7 +132,7 @@
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-spring</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.1.2-SNAPSHOT</version>
             </dependency>
             <!--Peacetrue Serialzie-->
             <dependency>
@@ -176,6 +176,7 @@
                 <artifactId>peacetrue-task-executor-impl</artifactId>
                 <version>2.3.0-SNAPSHOT</version>
             </dependency>
+
             <!--Peacetrue modelgenerator-->
             <dependency>
                 <groupId>com.github.peacetrue.modelgenerator</groupId>
@@ -230,6 +231,45 @@
                 <version>2.0-SNAPSHOT</version>
             </dependency>
 
+            <!-- Peacetrue template module library -->
+            <dependency>
+                <groupId>com.github.peacetrue.template</groupId>
+                <artifactId>peacetrue-template-service-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.template</groupId>
+                <artifactId>peacetrue-template-service-mybatis</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.template</groupId>
+                <artifactId>peacetrue-template-controller</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.template</groupId>
+                <artifactId>peacetrue-template-type</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- Peacetrue metadata -->
+            <dependency>
+                <groupId>com.github.peacetrue.metadata</groupId>
+                <artifactId>peacetrue-metadata-service-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.metadata</groupId>
+                <artifactId>peacetrue-metadata-service-impl</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.metadata</groupId>
+                <artifactId>peacetrue-metadata-controller</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
             <!-- Third Party -->
             <dependency>
                 <groupId>org.unitils</groupId>
@@ -245,6 +285,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.6</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>23.0</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
