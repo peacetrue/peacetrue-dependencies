@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.peacetrue</groupId>
     <artifactId>peacetrue-dependencies</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Peacetrue Dependencies</name>
     <description>Peacetrue Dependencies</description>
@@ -257,17 +257,17 @@
             <dependency>
                 <groupId>com.github.peacetrue.metadata</groupId>
                 <artifactId>peacetrue-metadata-service-api</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0.3-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.metadata</groupId>
                 <artifactId>peacetrue-metadata-service-impl</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0.3-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.metadata</groupId>
                 <artifactId>peacetrue-metadata-controller</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0.3-SNAPSHOT</version>
             </dependency>
 
             <!-- Third Party -->
