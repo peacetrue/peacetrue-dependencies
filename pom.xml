@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.peacetrue</groupId>
     <artifactId>peacetrue-dependencies</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Peacetrue Dependencies</name>
     <description>Peacetrue Dependencies</description>
@@ -81,7 +81,7 @@
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-mybatis</artifactId>
-                <version>1.1.3-SNAPSHOT</version>
+                <version>1.1.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
@@ -268,6 +268,23 @@
                 <groupId>com.github.peacetrue.metadata</groupId>
                 <artifactId>peacetrue-metadata-controller</artifactId>
                 <version>1.0.3-SNAPSHOT</version>
+            </dependency>
+
+            <!-- Peacetrue module -->
+            <dependency>
+                <groupId>com.github.peacetrue.module</groupId>
+                <artifactId>peacetrue-module-service-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.module</groupId>
+                <artifactId>peacetrue-module-service-mybatis</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.module</groupId>
+                <artifactId>peacetrue-module-controller</artifactId>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
 
             <!-- Third Party -->
