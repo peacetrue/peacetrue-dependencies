@@ -46,14 +46,15 @@
                 <artifactId>peacetrue-core</artifactId>
                 <version>2.0.0-SNAPSHOT</version>
             </dependency>
+            <!-- Peacetrue Third Extend -->
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
-                <artifactId>peacetrue-jackson</artifactId>
+                <artifactId>peacetrue-asm</artifactId>
                 <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
-                <artifactId>peacetrue-asm</artifactId>
+                <artifactId>peacetrue-jackson</artifactId>
                 <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -68,18 +69,13 @@
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
-                <artifactId>peacetrue-associate</artifactId>
+                <artifactId>peacetrue-mybatis</artifactId>
                 <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
-                <artifactId>peacetrue-enum</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.peacetrue</groupId>
-                <artifactId>peacetrue-export</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <artifactId>spring-data-commons-page</artifactId>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
@@ -88,28 +84,29 @@
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-validation</artifactId>
+                <version>2.0.0-SNAPSHOT</version>
+            </dependency>
+            <!-- Peacetrue Functionality -->
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-associate</artifactId>
+                <version>2.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-enum</artifactId>
+                <version>2.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-export</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-lock</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.peacetrue</groupId>
-                <artifactId>peacetrue-mybatis</artifactId>
-                <version>1.1.4-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.peacetrue</groupId>
-                <artifactId>peacetrue-validation</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.peacetrue</groupId>
-                <artifactId>spring-data-commons-page</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <!--Peacetrue Result-->
             <dependency>
@@ -146,119 +143,119 @@
             <dependency>
                 <groupId>com.github.peacetrue.serialize</groupId>
                 <artifactId>peacetrue-serialize-api</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.serialize</groupId>
                 <artifactId>peacetrue-serialize-java</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.serialize</groupId>
                 <artifactId>peacetrue-serialize-jackson</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <!--Peacetrue Task-->
             <dependency>
                 <groupId>com.github.peacetrue.task</groupId>
                 <artifactId>peacetrue-task-service-api</artifactId>
-                <version>2.3.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.task</groupId>
                 <artifactId>peacetrue-task-service-mybatis</artifactId>
-                <version>2.3.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.task</groupId>
                 <artifactId>peacetrue-task-controller</artifactId>
-                <version>2.3.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.task</groupId>
                 <artifactId>peacetrue-task-executor-api</artifactId>
-                <version>2.3.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.task</groupId>
                 <artifactId>peacetrue-task-executor-impl</artifactId>
-                <version>2.3.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
 
             <!--Peacetrue modelgenerator-->
             <dependency>
                 <groupId>com.github.peacetrue.modelgenerator</groupId>
                 <artifactId>peacetrue-modelgenerator</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.modelgenerator</groupId>
                 <artifactId>peacetrue-modelgenerator-template</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.modelgenerator</groupId>
                 <artifactId>peacetrue-modelgenerator-template-aum</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.modelgenerator</groupId>
                 <artifactId>peacetrue-modelgenerator-model-datasource</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.modelgenerator</groupId>
                 <artifactId>peacetrue-modelgenerator-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
 
             <!--Peacetrue log-->
             <dependency>
                 <groupId>com.github.peacetrue.log</groupId>
                 <artifactId>peacetrue-log-service-api</artifactId>
-                <version>2.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.log</groupId>
                 <artifactId>peacetrue-log-service-mybatis</artifactId>
-                <version>2.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.log</groupId>
                 <artifactId>peacetrue-log-controller</artifactId>
-                <version>2.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.log</groupId>
                 <artifactId>peacetrue-log-aspect</artifactId>
-                <version>2.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.log</groupId>
                 <artifactId>peacetrue-log-type</artifactId>
-                <version>2.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
 
             <!-- Peacetrue template module library -->
             <dependency>
                 <groupId>com.github.peacetrue.template</groupId>
                 <artifactId>peacetrue-template-service-api</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.template</groupId>
                 <artifactId>peacetrue-template-service-mybatis</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.template</groupId>
                 <artifactId>peacetrue-template-controller</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.template</groupId>
                 <artifactId>peacetrue-template-type</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
 
             <!-- Peacetrue metadata -->
@@ -282,20 +279,40 @@
             <dependency>
                 <groupId>com.github.peacetrue.module</groupId>
                 <artifactId>peacetrue-module-service-api</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.module</groupId>
                 <artifactId>peacetrue-module-service-mybatis</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.module</groupId>
                 <artifactId>peacetrue-module-controller</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
 
             <!-- Third Party -->
+            <dependency>
+                <groupId>com.github.kenglxn.QRGen</groupId>
+                <artifactId>javase</artifactId>
+                <version>2.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>2.0.1.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>6.0.7.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
+                <version>1.0.2.Final</version>
+            </dependency>
             <!--//TODO reflections-spring-->
             <dependency>
                 <groupId>org.reflections</groupId>
