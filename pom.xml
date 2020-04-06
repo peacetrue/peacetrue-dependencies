@@ -25,7 +25,7 @@
 
     <repositories>
         <repository>
-            <id>sonatype-snapshots</id>
+            <id>sonatype-nexus-snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
@@ -95,6 +95,26 @@
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-velocity</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.generator</groupId>
+                <artifactId>peacetrue-generator</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.generator</groupId>
+                <artifactId>peacetrue-generator-content</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.generator</groupId>
+                <artifactId>peacetrue-generator-velocity</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
                 <artifactId>spring-data-commons-page</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
@@ -133,6 +153,27 @@
                 <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-spring</artifactId>
                 <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-test</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue</groupId>
+                <artifactId>peacetrue-encryption</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.sql</groupId>
+                <artifactId>peacetrue-sql</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.sql</groupId>
+                <artifactId>peacetrue-sql-metadata</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <!--Peacetrue Serialzie-->
             <dependency>
@@ -311,6 +352,16 @@
 
             <!-- Third Party -->
             <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity.tools</groupId>
+                <artifactId>velocity-tools-generic</artifactId>
+                <version>3.0</version>
+            </dependency>
+            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>2.6.20</version>
@@ -390,7 +441,7 @@
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
-                <version>1.3.9</version>
+                <version>3.0.2</version>
             </dependency>
             <dependency>
                 <groupId>org.aspectj</groupId>
