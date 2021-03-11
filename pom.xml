@@ -21,7 +21,7 @@
         <!-- Dependency versions -->
         <peacetrue.version>[2.0.0-SNAPSHOT,3.0.0-SNAPSHOT)</peacetrue.version>
         <peacetrue.module.version>[1.0.0-SNAPSHOT,2.0.0-SNAPSHOT)</peacetrue.module.version>
-        <peacetrue.sql.version>[2.0.0-SNAPSHOT,3.0.0-SNAPSHOT)</peacetrue.sql.version>
+        <peacetrue.sql.version>2.0.0-SNAPSHOT</peacetrue.sql.version>
         <peacetrue.velocity.version>[1.0.0-SNAPSHOT,2.0.0-SNAPSHOT)</peacetrue.velocity.version>
         <peacetrue.generator.version>[1.0.0-SNAPSHOT,2.0.0-SNAPSHOT)</peacetrue.generator.version>
 <!--        <spring.boot.version>[2.0.0.RELEASE,3.0.0.RELEASE)</spring.boot.version>-->
@@ -57,6 +57,26 @@
                 <version>Hoxton.SR4</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!--NOTE bom 版本不是最新的 -->
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-bom</artifactId>
+                <version>2020.0.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-core</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-test</artifactId>
+                <version>3.4.1</version>
+                <scope>test</scope>
             </dependency>
 
             <!-- Peacetrue -->
@@ -339,17 +359,17 @@
             <dependency>
                 <groupId>com.github.peacetrue.metadata</groupId>
                 <artifactId>peacetrue-metadata-service-api</artifactId>
-                <version>${peacetrue.version}</version>
+                <version>${peacetrue.module.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.metadata</groupId>
                 <artifactId>peacetrue-metadata-service-impl</artifactId>
-                <version>${peacetrue.version}</version>
+                <version>${peacetrue.module.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.metadata</groupId>
                 <artifactId>peacetrue-metadata-controller</artifactId>
-                <version>${peacetrue.version}</version>
+                <version>${peacetrue.module.version}</version>
             </dependency>
 
             <!-- Peacetrue module -->
@@ -531,7 +551,7 @@
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
-                <version>1.3.9</version>
+                <version>3.0.2</version>
             </dependency>
             <dependency>
                 <groupId>org.aspectj</groupId>
@@ -607,35 +627,42 @@
                 <artifactId>jooq</artifactId>
                 <version>3.13.1</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.playtika.reactivefeign</groupId>
+                <artifactId>feign-reactor-bom</artifactId>
+                <version>2.0.26</version>
+                <type>pom</type>
+            </dependency>
             <dependency>
                 <groupId>com.playtika.reactivefeign</groupId>
                 <artifactId>feign-reactor-core</artifactId>
-                <version>[2.0.0,)</version>
+                <version>2.0.26</version>
             </dependency>
             <dependency>
                 <groupId>com.playtika.reactivefeign</groupId>
                 <artifactId>feign-reactor-webclient</artifactId>
-                <version>[2.0.0,)</version>
+                <version>2.0.26</version>
             </dependency>
             <dependency>
                 <groupId>com.playtika.reactivefeign</groupId>
                 <artifactId>feign-reactor-spring-configuration</artifactId>
-                <version>[2.0.0,)</version>
+                <version>2.0.26</version>
             </dependency>
             <dependency>
                 <groupId>com.playtika.reactivefeign</groupId>
                 <artifactId>feign-reactor-cloud</artifactId>
-                <version>[2.0.0,)</version>
+                <version>2.0.26</version>
             </dependency>
             <dependency>
                 <groupId>com.playtika.reactivefeign</groupId>
                 <artifactId>feign-reactor-cloud2</artifactId>
-                <version>[2.0.0,)</version>
+                <version>2.0.26</version>
             </dependency>
             <dependency>
                 <groupId>com.playtika.reactivefeign</groupId>
                 <artifactId>feign-reactor-java11</artifactId>
-                <version>[2.0.0,)</version>
+                <version>2.0.26</version>
             </dependency>
             <dependency>
                 <groupId>net.logstash.logback</groupId>
