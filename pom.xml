@@ -24,21 +24,26 @@
         <peacetrue.sql.version>2.0.0-SNAPSHOT</peacetrue.sql.version>
         <peacetrue.velocity.version>[1.0.0-SNAPSHOT,2.0.0-SNAPSHOT)</peacetrue.velocity.version>
         <peacetrue.generator.version>[1.0.0-SNAPSHOT,2.0.0-SNAPSHOT)</peacetrue.generator.version>
-<!--        <spring.boot.version>[2.0.0.RELEASE,3.0.0.RELEASE)</spring.boot.version>-->
-<!--        <spring.boot.version>2.4.0-M2</spring.boot.version>-->
-        <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
+        <!--        <spring.boot.version>[2.0.0.RELEASE,3.0.0.RELEASE)</spring.boot.version>-->
+        <!--        <spring.boot.version>2.4.0-M2</spring.boot.version>-->
+<!--        <spring.boot.version>2.3.6.RELEASE</spring.boot.version>-->
+        <spring.boot.version>2.4.5</spring.boot.version>
         <!-- Plugin versions -->
 
     </properties>
 
     <repositories>
         <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <id>aliyun</id>
+            <url>https://maven.aliyun.com/repository/public</url>
         </repository>
         <repository>
             <id>spring</id>
             <url>https://repo.spring.io/plugins-release</url>
+        </repository>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 
@@ -58,6 +63,28 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+<!--
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-releasetrain</artifactId>
+                <version>Neumann-RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+-->
+            <dependency>
+                <groupId>org.apache.hive</groupId>
+                <artifactId>hive</artifactId>
+                <version>3.1.2</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <!--NOTE bom 版本不是最新的 -->
             <dependency>
@@ -70,6 +97,7 @@
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-core</artifactId>
+                <!-- 3.3.11 -->
                 <version>3.4.1</version>
             </dependency>
             <dependency>
@@ -119,11 +147,6 @@
             <dependency>
                 <groupId>com.github.peacetrue</groupId>
                 <artifactId>peacetrue-mybatis</artifactId>
-                <version>${peacetrue.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.peacetrue</groupId>
-                <artifactId>spring-data-commons-page</artifactId>
                 <version>${peacetrue.version}</version>
             </dependency>
             <dependency>
@@ -392,7 +415,12 @@
             <!-- Peacetrue user -->
             <dependency>
                 <groupId>com.github.peacetrue.user</groupId>
-                <artifactId>peacetrue-user-client</artifactId>
+                <artifactId>peacetrue-user-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.user</groupId>
+                <artifactId>peacetrue-user-service-impl</artifactId>
                 <version>${peacetrue.module.version}</version>
             </dependency>
             <dependency>
@@ -400,16 +428,185 @@
                 <artifactId>peacetrue-user-controller</artifactId>
                 <version>${peacetrue.module.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.user</groupId>
+                <artifactId>peacetrue-user-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+
+            <!-- Peacetrue merchant -->
+            <dependency>
+                <groupId>com.github.peacetrue.merchant</groupId>
+                <artifactId>peacetrue-merchant-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.merchant</groupId>
+                <artifactId>peacetrue-merchant-service-impl</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.merchant</groupId>
+                <artifactId>peacetrue-merchant-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.merchant</groupId>
+                <artifactId>peacetrue-merchant-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+
+            <!-- Peacetrue member -->
+            <dependency>
+                <groupId>com.github.peacetrue.member</groupId>
+                <artifactId>peacetrue-member-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.member</groupId>
+                <artifactId>peacetrue-member-service-impl</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.member</groupId>
+                <artifactId>peacetrue-member-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.member</groupId>
+                <artifactId>peacetrue-member-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+
+            <!-- Peacetrue goods -->
+            <dependency>
+                <groupId>com.github.peacetrue.goods</groupId>
+                <artifactId>peacetrue-goods-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.goods</groupId>
+                <artifactId>peacetrue-goods-service-impl</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.goods</groupId>
+                <artifactId>peacetrue-goods-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.goods</groupId>
+                <artifactId>peacetrue-goods-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+
+            <!-- Peacetrue order -->
+            <dependency>
+                <groupId>com.github.peacetrue.order</groupId>
+                <artifactId>peacetrue-order-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.order</groupId>
+                <artifactId>peacetrue-order-service-impl</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.order</groupId>
+                <artifactId>peacetrue-order-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.order</groupId>
+                <artifactId>peacetrue-order-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+
+            <!-- Peacetrue region -->
+            <dependency>
+                <groupId>com.github.peacetrue.region</groupId>
+                <artifactId>peacetrue-region-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.region</groupId>
+                <artifactId>peacetrue-region-service-impl</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.region</groupId>
+                <artifactId>peacetrue-region-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.region</groupId>
+                <artifactId>peacetrue-region-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+
+            <!-- Peacetrue contact-address -->
+            <dependency>
+                <groupId>com.github.peacetrue.contact-address</groupId>
+                <artifactId>peacetrue-contact-address-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.contact-address</groupId>
+                <artifactId>peacetrue-contact-address-service-impl</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.contact-address</groupId>
+                <artifactId>peacetrue-contact-address-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.contact-address</groupId>
+                <artifactId>peacetrue-contact-address-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+
+            <!-- Peacetrue dictionary -->
+            <dependency>
+                <groupId>com.github.peacetrue.dictionary</groupId>
+                <artifactId>peacetrue-dictionary-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.dictionary</groupId>
+                <artifactId>peacetrue-dictionary-service-impl</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.dictionary</groupId>
+                <artifactId>peacetrue-dictionary-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.dictionary</groupId>
+                <artifactId>peacetrue-dictionary-client</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
 
             <!-- Peacetrue attachment -->
             <dependency>
                 <groupId>com.github.peacetrue.attachment</groupId>
-                <artifactId>peacetrue-attachment-client</artifactId>
+                <artifactId>peacetrue-attachment-service-api</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.attachment</groupId>
+                <artifactId>peacetrue-attachment-service-impl</artifactId>
                 <version>${peacetrue.module.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.peacetrue.attachment</groupId>
                 <artifactId>peacetrue-attachment-controller</artifactId>
+                <version>${peacetrue.module.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.peacetrue.attachment</groupId>
+                <artifactId>peacetrue-attachment-client</artifactId>
                 <version>${peacetrue.module.version}</version>
             </dependency>
 
@@ -605,13 +802,13 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>5.1.46</version>
             </dependency>
-<!--
-            <dependency>
-                <groupId>org.reflections</groupId>
-                <artifactId>reflections</artifactId>
-                <version>0.9.9-RC1</version>
-            </dependency>
--->
+            <!--
+                        <dependency>
+                            <groupId>org.reflections</groupId>
+                            <artifactId>reflections</artifactId>
+                            <version>0.9.9-RC1</version>
+                        </dependency>
+            -->
             <dependency>
                 <groupId>org.jooq</groupId>
                 <artifactId>jool</artifactId>
@@ -673,6 +870,12 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>2.3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-r2dbc</artifactId>
+                <version>1.3.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
