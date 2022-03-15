@@ -1,0 +1,10 @@
+name: peacetrue-dependencies
+title: 版本依赖
+version: master
+asciidoc:
+  attributes:
+    numbered: '@'
+    source-options: '%snowrap@'
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc

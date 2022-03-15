@@ -1,0 +1,4 @@
+= 简介
+
+//@formatter:off
+`peacetrue-dependencies` 模块提供 peacetrue 系列类库及其依赖类库的公共版本。

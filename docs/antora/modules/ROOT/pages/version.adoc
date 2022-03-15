@@ -1,0 +1,31 @@
+= 版本
+
+:numbered!: ''
+
+== 1.0.0
+
+临时发布的一个版本，未详细规划。
+
+== 1.0.0-SNAPSHOT
+
+快照测试版本。
+
+== 1.0.1
+
+Spring 4 系列和 Validation:1.1 系列。
+
+.理想情况
+* 1 系列最高版本：spring-boot-dependencies:1.5.22.RELEASE
+* 4 系列最高版本：spring:4.3.30.RELEASE
+* 1 系列最高版本：javax.validation:validation-api:1.1.0.Final
+* 5 系列最高版本：hibernate-validator:5.4.3.Final
+
+.实际测试环境
+* spring-boot-dependencies:1.5.1.RELEASE
+* spring:4.3.6.RELEASE
+* validation-api:1.1.0.Final
+* hibernate-validator:5.0.0.Final
+
+有一些类引入了 validation-api:2.0.1.Final 中的注解，
+但实际环境中不存在 validation-api:2.0.1.Final 类库，
+不会引发运行错误，也没有任何效果。
