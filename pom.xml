@@ -11,8 +11,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.peacetrue</groupId>
     <artifactId>peacetrue-dependencies</artifactId>
-    <version>1.0.1</version>
-<!--    <version>1.0.1-SNAPSHOT</version>-->
+<!--    <version>2.0.0</version>-->
+    <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Peacetrue Dependencies</name>
     <description>Peacetrue Dependencies</description>
@@ -20,13 +20,13 @@
 
     <properties>
         <!-- Dependency versions -->
-        <snapshot.version></snapshot.version>
-<!--        <snapshot.version>-SNAPSHOT</snapshot.version>-->
+<!--        <snapshot.version></snapshot.version>-->
+        <snapshot.version>-SNAPSHOT</snapshot.version>
         <peacetrue.version>[2.0.0${snapshot.version},3.0.0${snapshot.version})</peacetrue.version>
         <peacetrue.beans.version>1.0.0${snapshot.version}</peacetrue.beans.version>
         <peacetrue.validation.version>1.0.0${snapshot.version}</peacetrue.validation.version>
-        <peacetrue.spring.version>1.0.2${snapshot.version}</peacetrue.spring.version>
-        <peacetrue.result.version>1.0.0${snapshot.version}</peacetrue.result.version>
+        <peacetrue.spring.version>2.0.0${snapshot.version}</peacetrue.spring.version>
+        <peacetrue.result.version>2.0.0${snapshot.version}</peacetrue.result.version>
         <peacetrue.module.version>1.0.0${snapshot.version}</peacetrue.module.version>
         <peacetrue.enum.version>${peacetrue.module.version}</peacetrue.enum.version>
         <peacetrue.user.version>${peacetrue.module.version}</peacetrue.user.version>
@@ -44,8 +44,8 @@
         <!--        <spring.boot.version>[2.0.0.RELEASE,3.0.0.RELEASE)</spring.boot.version>-->
         <!--        <spring.boot.version>2.4.0-M2</spring.boot.version>-->
         <!--        <spring.boot.version>2.3.6.RELEASE</spring.boot.version>-->
-<!--        <spring.boot.version>2.4.5</spring.boot.version>-->
-        <spring.boot.version>1.5.1.RELEASE</spring.boot.version>
+        <spring.boot.version>2.0.0.RELEASE</spring.boot.version>
+<!--        <spring.boot.version>1.5.1.RELEASE</spring.boot.version>-->
 <!--        <spring.boot.version>1.5.22.RELEASE</spring.boot.version>-->
         <!-- Plugin versions -->
 
@@ -61,7 +61,7 @@
             <url>https://repo.spring.io/plugins-release</url>
         </repository>
         <repository>
-            <id>sonatype-nexus${snapshot.version}s</id>
+            <id>sonatype-snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
@@ -771,13 +771,15 @@
                 <artifactId>javax.annotation-api</artifactId>
                 <version>1.3.2</version>
             </dependency>
+<!--
             <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
-<!--                <version>1.0.0.GA</version>-->
+&lt;!&ndash;                <version>1.0.0.GA</version>&ndash;&gt;
                 <version>1.1.0.Final</version>
-<!--                <version>2.0.1.Final</version>-->
+&lt;!&ndash;                <version>2.0.1.Final</version>&ndash;&gt;
             </dependency>
+-->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
@@ -789,14 +791,16 @@
                 <artifactId>javase</artifactId>
                 <version>2.5.0</version>
             </dependency>
+<!--
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-<!--                <version>4.3.1.Final</version>-->
-<!--                <version>5.0.0.Final</version>-->
+&lt;!&ndash;                <version>4.3.1.Final</version>&ndash;&gt;
+&lt;!&ndash;                <version>5.0.0.Final</version>&ndash;&gt;
                 <version>5.4.3.Final</version>
-<!--                <version>6.0.7.Final</version>-->
+&lt;!&ndash;                <version>6.0.7.Final</version>&ndash;&gt;
             </dependency>
+-->
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
                 <artifactId>hibernate-jpa-2.1-api</artifactId>
