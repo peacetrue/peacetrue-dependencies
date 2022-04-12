@@ -29,3 +29,7 @@ Spring 4 系列和 Validation:1.1 系列。
 有一些类引入了 validation-api:2.0.1.Final 中的注解，
 但实际环境中不存在 validation-api:2.0.1.Final 类库，
 不会引发运行错误，也没有任何效果。
+
+== 2.0.0
+
+对应 spring-boot-dependencies:2.0.0.RELEASE。
