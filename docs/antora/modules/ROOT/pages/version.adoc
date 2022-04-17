@@ -1,14 +1,12 @@
-= 版本
+= BOM 版本
 
 :numbered!: ''
+
+BOM 中类库版本的变化都会影响 BOM 的版本。
 
 == 1.0.0
 
 临时发布的一个版本，未详细规划。
-
-== 1.0.0-SNAPSHOT
-
-快照测试版本。
 
 == 1.0.1
 
@@ -33,3 +31,7 @@ Spring 4 系列和 Validation:1.1 系列。
 == 2.0.0
 
 对应 spring-boot-dependencies:2.0.0.RELEASE。
+
+== 2.0.1
+
+peacetrue-result 从 2.0.0 升级至 2.1.0。

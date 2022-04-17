@@ -1,5 +1,5 @@
-= 声明Peacetrue类库最新的依赖版本
-xiayx <xiayouxue@hotmail.com>
+= 组件版本 BOM
+peace <xiayouxue@hotmail.com>
 v1.0, 2019-08-18: SNAPSHOT
 :doctype: docbook
 :toc: left
@@ -10,4 +10,5 @@ v1.0, 2019-08-18: SNAPSHOT
 :testsourcedir: src/test/java
 :source-highlighter: highlightjs
 
-声明Peacetrue类库最新的依赖版本。
+详情参考 https://peacetrue.cn/summarize/peacetrue-dependencies/index.html[安宁的博客^]。
+

@@ -1,0 +1,92 @@
+= BOM 中类库版本
+
+同一系列下类库共享版本号。
+
+
+////
+== BOM
+
+组名：*com.github.peacetrue*，共包含 1 个类库：
+
+* peacetrue-dependencies
+
+.版本列表
+[%autowidth.stretch]
+|===
+|版本 |说明
+
+|1.0.0
+|临时版本
+
+|1.0.1
+|基于 Spring Boot 1 系列最高版本、validation-api:1.1.0.Final
+
+|2.0.0
+|基于 Spring Boot 2 系列最低版本、validation-api:2.0.1.Final
+|===
+////
+
+
+== Peace 系列
+
+组名：*com.github.peacetrue*，共包含 4 个类库：
+
+. peacetrue-gradle
+. peacetrue-beans
+. peacetrue-validation
+. peacetrue-test
+
+.版本列表
+[%autowidth.stretch]
+|===
+|版本 |说明
+
+|1.0.0
+|实现 gradle、beans、validation、test 基础版本
+|===
+
+== Spring 系列
+
+组名：*com.github.peacetrue.spring*，共包含 1 个类库：
+
+. peacetrue-spring-beans
+
+.版本列表
+[%autowidth.stretch]
+|===
+|版本 |说明
+
+|1.0.0
+|实现 beans 基础版本
+
+|1.0.1
+|处理 beans 版本纠纷
+
+|1.0.2
+|beans 添加 `BeanUtils.setDefaults` 方法
+|===
+
+== Result 系列
+
+组名：*com.github.peacetrue.result*，共包含 5 个类库：
+
+. peacetrue-result-core
+. peacetrue-result-builder
+. peacetrue-result-success
+. peacetrue-result-exception
+. peacetrue-result-exception-support
+
+.版本列表
+[%autowidth.stretch]
+|===
+|版本 |说明
+
+|1.0.0
+|基于 Spring Boot 1 系列最高版本、validation-api:1.1.0.Final
+
+|2.0.0
+|基于 Spring Boot 2 系列最低版本、validation-api:2.0.1.Final
+
+|2.1.0
+|同时支持 Spring Boot 1 系列最高版本和 Spring Boot 2 系列最低版本
+|===
