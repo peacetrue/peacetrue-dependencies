@@ -35,3 +35,7 @@ Spring 4 系列和 Validation:1.1 系列。
 == 2.0.1
 
 peacetrue-result 从 2.0.0 升级至 2.1.0。
+
+== 2.0.2
+
+peacetrue-validation 从 1.0.0 升级至 1.0.1。
