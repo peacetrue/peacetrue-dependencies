@@ -7,13 +7,16 @@ group "com.github.peacetrue"
 version "${peaceDependenciesVersion}${tailSnapshot}"
 description "Peace 系列组件依赖类库的版本"
 
+ext {
+    isPublishDisabled = true
+}
+
 javaPlatform {
     allowDependencies()
 }
 
 dependencies {
     constraints {
-        api "com.github.peacetrue:peacetrue-gradle:${peaceGradleVersion}${tailSnapshot}"
         api "com.github.peacetrue:peacetrue-beans:${peaceBeansVersion}${tailSnapshot}"
         api "com.github.peacetrue:peacetrue-common:${peaceCommonVersion}${tailSnapshot}"
         api "com.github.peacetrue:peacetrue-servlet:${peaceServletVersion}${tailSnapshot}"
@@ -51,6 +54,7 @@ dependencies {
         api "org.unitils:unitils-core:3.4.2" // 反射断言
         api "org.jeasy:easy-random-core:4.3.0"
         api "org.jeasy:easy-random-bean-validation:4.3.0"
+        api "org.mockito:mockito-core:3.9.0"
         api "org.aspectj:aspectjweaver:1.9.0"
         api "org.aspectj:aspectjrt:1.9.0"
         api "org.reflections:reflections:0.9.11"
@@ -61,7 +65,8 @@ dependencies {
         api "org.junit.jupiter:junit-jupiter-api:5.7.0"
         api "org.junit.jupiter:junit-jupiter-engine:5.7.0"
         api "com.alibaba:fastjson:1.2.79" //@JSON
-        api "org.flywaydb:flyway-core:7.15.0" //Flyway Teams Edition or MySQL upgrade required: MySQL 5.7 is no longer supported by Flyway Community Edition, but still supported by Flyway Teams Edition.
+//        api "org.flywaydb:flyway-core:7.15.0"
+        //Flyway Teams Edition or MySQL upgrade required: MySQL 5.7 is no longer supported by Flyway Community Edition, but still supported by Flyway Teams Edition.
         api "com.h2database:h2:1.4.200" //Unsupported connection setting "DATABASE_TO_LOWER"
         api "mysql:mysql-connector-java:5.1.46"
         api "com.fasterxml.jackson.core:jackson-databind:2.9.4"
