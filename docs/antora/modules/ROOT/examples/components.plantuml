@@ -1,0 +1,24 @@
+@startuml
+top to bottom direction
+'left to right direction
+[peacetrue-beans]-->[jsr305]
+[peacetrue-test]-->[jsr305]
+[peacetrue-common]-->[jsr305]
+[peacetrue-common]-->[slf4j-api]
+[peacetrue-servlet]-->[jsr305]
+[peacetrue-servlet]-->[javax.servlet:javax.servlet-api]
+[peacetrue-cryptography]-->[jsr305]
+[peacetrue-validation]-->[jsr305]
+[peacetrue-validation]-->[javax.validation:validation-api]
+[peacetrue-velocity]-->[jsr305]
+[peacetrue-velocity]-->[org.apache.velocity*]
+[peacetrue-tplngn-core]-->[jsr305]
+[peacetrue-tplngn-core]-->[slf4j-api]
+[peacetrue-tplngn-core]-->[peacetrue-common]
+[peacetrue-tplngn-core]-->[peacetrue-spring-beans]
+'[peacetrue-spring]-->[spring]
+'note left of "peacetrue-dependencies": 独立组件
+'note left of "peacetrue-gradle-plugin": 独立组件
+note right of jsr305: com.google.code.findbugs:jsr305
+note right of "slf4j-api": org.slf4j:slf4j-api
+@enduml

@@ -1,14 +1,1 @@
-= 组件版本 BOM
-peace <xiayouxue@hotmail.com>
-v1.0, 2019-08-18: SNAPSHOT
-:doctype: docbook
-:toc: left
-:numbered:
-:imagesdir: docs/assets/images
-:sourcedir: src/main/java
-:resourcesdir: src/main/resources
-:testsourcedir: src/test/java
-:source-highlighter: highlightjs
-
-详情参考 https://peacetrue.cn/summarize/peacetrue-dependencies/index.html[安宁的博客^]。
-
+docs/antora/modules/ROOT/pages/index.adoc

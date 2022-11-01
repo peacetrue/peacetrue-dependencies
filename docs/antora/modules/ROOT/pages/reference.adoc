@@ -1,0 +1,66 @@
+= 参考指南
+
+本文介绍 {app-name} 中包含的 Peacetrue 系列类库。
+
+.类库列表
+[%autowidth.stretch]
+|===
+|组名 |名称 |版本 |备注
+
+|com.github.peacetrue
+|peacetrue-beans
+|{peaceBeansVersion}
+|声明属性及相关数据对象接口
+
+|com.github.peacetrue
+|peacetrue-common
+|{peaceCommonVersion}
+|提供常用辅助工具类
+
+|com.github.peacetrue
+|peacetrue-test
+|{peaceTestVersion}
+|提供测试工具类
+
+|com.github.peacetrue
+|peacetrue-cryptography
+|{peaceCryptographyVersion}
+|统一常用密码学方法为接口
+
+|com.github.peacetrue
+|peacetrue-validation
+|{peaceValidationVersion}
+|扩展 BeanValidation
+
+|com.github.peacetrue
+|peacetrue-servlet
+|{peaceServletVersion}
+|扩展 Servlet
+
+|com.github.peacetrue
+|peacetrue-velocity
+|{peaceVelocityVersion}
+|扩展 Velocity
+
+|com.github.peacetrue.spring
+|peacetrue-spring-*
+|{peaceSpringVersion}
+|扩展 Spring
+
+|com.github.peacetrue.result
+|peacetrue-result-*
+|{peaceResultVersion}
+|规范响应结果
+
+|com.github.peacetrue.tplngn
+|peacetrue-tplngn-*
+|{peaceTplngnVersion}
+|实现目录模板引擎
+
+|com.github.peacetrue.template
+|peacetrue-template-*
+|{peaceTemplateVersion}
+|提供常用目录模板
+|===
+
+

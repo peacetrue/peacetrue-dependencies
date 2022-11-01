@@ -1,4 +1,67 @@
-= 简介
+= 概述
+:website: https://peacetrue.github.io
+:app-group: com.github.peacetrue
+:app-name: peacetrue-dependencies
+:imagesdir: docs/antora/modules/ROOT/assets/images
+
+image:https://img.shields.io/github/workflow/status/peacetrue/{app-name}/build/master["GitHub Workflow Status",link="https://github.com/peacetrue/{app-name}/actions"]
+image:https://snyk.io/test/github/peacetrue/{app-name}/badge.svg["Snyk",link="https://app.snyk.io/org/peacetrue"]
+image:https://img.shields.io/nexus/r/{app-group}/{app-name}?label={app-name}&server=https%3A%2F%2Foss.sonatype.org%2F["{app-name}",link="https://search.maven.org/search?q={app-name}"]
 
 //@formatter:off
-`peacetrue-dependencies` 模块提供 peacetrue 系列类库及其依赖类库的公共版本。
+
+== 简介（What）
+
+{website}/{app-name}/[{app-name}] 提供 Peacetrue 系列类库及其依赖类库的版本清单(Maven BOM)。
+
+== 背景（Why）
+
+在项目中配置依赖时，需要声明版本号。
+通常多个存在关联的项目之间会使用相同的依赖版本号，
+为了避免由于依赖版本差异导致问题，使用版本清单统一声明依赖类库的版本。
+
+== 用法（How）
+
+Gradle 语法：
+
+.build.gradle
+[source%nowrap,gradle,subs="specialchars,attributes"]
+----
+dependencies{
+    implementation platform("{app-group}:{app-name}:\{latest-version}")
+    compileOnly platform("{app-group}:{app-name}:\{latest-version}")
+    annotationProcessor platform("{app-group}:{app-name}:\{latest-version}")
+}
+----
+
+NOTE: 使用 platform 语法，需要 Gradle 7 及以上版本。
+
+Maven 语法：
+
+.pom.xml
+[source%nowrap,xml,subs="specialchars,attributes"]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>{app-group}</groupId>
+            <artifactId>{app-name}</artifactId>
+            <version>\{latest-version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+== 参与者（Who）
+
+. peace(xiayouxue@hotmail.com)
+
+== 活动（When）
+
+初始提交于 2019-08-18，最近提交于 2022-11-01。
+
+== 许可证（License）
+
+https://github.com/peacetrue/{app-name}/blob/master/LICENSE[Apache License 2.0^]
