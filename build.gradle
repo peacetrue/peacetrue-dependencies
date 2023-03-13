@@ -119,6 +119,8 @@ dependencies {
         api "io.projectreactor:reactor-core:3.4.24"
         api "io.projectreactor:reactor-test:3.4.24"
         api "com.playtika.reactivefeign:feign-reactor-spring-configuration:3.2.6"
+        api "com.playtika.reactivefeign:feign-reactor-core:3.2.6"
+        api "com.playtika.reactivefeign:feign-reactor-webclient:3.2.6"
 
         // OpenAPI 3 文档支持：https://github.com/springdoc/springdoc-openapi
         api "org.springdoc:springdoc-openapi-ui:1.6.11"
