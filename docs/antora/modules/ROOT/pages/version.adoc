@@ -8,3 +8,7 @@
 
 . com.github.peacetrue.tplngn
 . com.github.peacetrue.template
+
+== 2.0.9
+
+`org.projectlombok:lombok:1.18.6` 升级到 `org.projectlombok:lombok:1.18.22`。

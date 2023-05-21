@@ -51,12 +51,28 @@ dependencies {
         api "com.github.peacetrue.template:peacetrue-template-webflux:${peaceTemplateVersion}${tailSnapshot}"
         api "com.github.peacetrue.template:peacetrue-template-reactadmin:${peaceTemplateVersion}${tailSnapshot}"
 
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-service-api:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-service-impl:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-controller:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-service-api-reactor:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-service-impl-reactor:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-controller-reactor:${peaceDictionaryVersion}${tailSnapshot}"
+        // 命令式编程
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-api-imperative:${peaceDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-impl-imperative:${peaceDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-controller-imperative:${peaceDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-client-imperative:${peaceDictionaryVersion}${tailSnapshot}"
+        // 响应式编程
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-api-reactive:${peaceDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-impl-reactive:${peaceDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-controller-reactive:${peaceDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-client-reactive:${peaceDictionaryVersion}${tailSnapshot}"
+
+        // 命令式编程
+        api "com.github.peacetrue.user:peacetrue-user-api-imperative:${peaceUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-impl-imperative:${peaceUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-controller-imperative:${peaceUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-client-imperative:${peaceUserVersion}${tailSnapshot}"
+        // 响应式编程
+        api "com.github.peacetrue.user:peacetrue-user-api-reactive:${peaceUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-impl-reactive:${peaceUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-controller-reactive:${peaceUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-client-reactive:${peaceUserVersion}${tailSnapshot}"
+
 
         api "com.github.peacetrue.module.template:peacetrue-module-template-service-impl:${peaceModuleTemplateVersion}${tailSnapshot}"
         api "com.github.peacetrue.module.template:peacetrue-module-template-controller:${peaceModuleTemplateVersion}${tailSnapshot}"
@@ -85,7 +101,7 @@ dependencies {
         api "javax.validation:validation-api:2.0.0.Final"
         api "javax.xml.bind:jaxb-api:2.3.0" //java 11
 
-        api "org.projectlombok:lombok:1.18.6"
+        api "org.projectlombok:lombok:1.18.22"
         api "org.slf4j:slf4j-api:1.7.36"
         api "ch.qos.logback:logback-classic:1.2.11"
 //        api "ch.qos.logback:logback-classic:1.3.4" // org.slf4j:slf4j-api:2.0.1
