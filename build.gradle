@@ -4,9 +4,10 @@ plugins {
     id "signing"
 }
 
+//TODO 此处的版本号以 peacetrue 起始，具体模块内的版本号以 peacetrue 起始
 group "com.github.peacetrue"
-version "${peaceDependenciesVersion}${tailSnapshot}"
-description "Peace 系列组件依赖类库的版本"
+version "${peacetrueDependenciesVersion}${tailSnapshot}"
+description "peacetrue 系列组件依赖类库的版本"
 
 ext {
     isPublishDisabled = true
@@ -18,72 +19,79 @@ javaPlatform {
 
 dependencies {
     constraints {
-        api "com.github.peacetrue:peacetrue-beans:${peaceBeansVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-common:${peaceCommonVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-servlet:${peaceServletVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-validation:${peaceValidationVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-persistence:${peacePersistenceVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-jackson:${peaceJacksonVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-velocity:${peaceVelocityVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-test:${peaceTestVersion}${tailSnapshot}"
-        api "com.github.peacetrue:peacetrue-cryptography:${peaceCryptographyVersion}${tailSnapshot}"
+        // 基础模块
+        api "com.github.peacetrue:peacetrue-beans:${peacetrueBeansVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-common:${peacetrueCommonVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-servlet:${peacetrueServletVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-validation:${peacetrueValidationVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-persistence:${peacetruePersistenceVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-jackson:${peacetrueJacksonVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-velocity:${peacetrueVelocityVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-test:${peacetrueTestVersion}${tailSnapshot}"
+        api "com.github.peacetrue:peacetrue-cryptography:${peacetrueCryptographyVersion}${tailSnapshot}"
 
-        api "com.github.peacetrue.spring:peacetrue-spring-beans:${peaceSpringVersion}${tailSnapshot}"
-        api "com.github.peacetrue.spring:peacetrue-spring-data:${peaceSpringVersion}${tailSnapshot}"
-        api "com.github.peacetrue.spring:peacetrue-spring-web:${peaceSpringVersion}${tailSnapshot}"
-        api "com.github.peacetrue.spring:peacetrue-spring-operator:${peaceSpringVersion}${tailSnapshot}"
-        api "com.github.peacetrue.spring:peacetrue-spring-signature:${peaceSpringVersion}${tailSnapshot}"
+        // Spring 相关
+        api "com.github.peacetrue.spring:peacetrue-spring-beans:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-data:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-web:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-security:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-openfeign:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-operator:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-signature:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-requestid:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-openapi:${peacetrueSpringVersion}${tailSnapshot}"
+        api "com.github.peacetrue.spring:peacetrue-spring-profiles:${peacetrueSpringVersion}${tailSnapshot}"
 
-        api "com.github.peacetrue.result:peacetrue-result-core:${peaceResultVersion}${tailSnapshot}"
-        api "com.github.peacetrue.result:peacetrue-result-builder:${peaceResultVersion}${tailSnapshot}"
-        api "com.github.peacetrue.result:peacetrue-result-success:${peaceResultVersion}${tailSnapshot}"
-        api "com.github.peacetrue.result:peacetrue-result-exception:${peaceResultVersion}${tailSnapshot}"
-        api "com.github.peacetrue.result:peacetrue-result-exception-support:${peaceResultVersion}${tailSnapshot}"
+        // 响应结果相关
+        api "com.github.peacetrue.result:peacetrue-result-core:${peacetrueResultVersion}${tailSnapshot}"
+        api "com.github.peacetrue.result:peacetrue-result-builder:${peacetrueResultVersion}${tailSnapshot}"
+        api "com.github.peacetrue.result:peacetrue-result-success:${peacetrueResultVersion}${tailSnapshot}"
+        api "com.github.peacetrue.result:peacetrue-result-exception:${peacetrueResultVersion}${tailSnapshot}"
+        api "com.github.peacetrue.result:peacetrue-result-exception-support:${peacetrueResultVersion}${tailSnapshot}"
 
-        api "com.github.peacetrue.tplngn:peacetrue-tplngn-core:${peaceTplngnVersion}${tailSnapshot}"
-        api "com.github.peacetrue.tplngn:peacetrue-tplngn-velocity:${peaceTplngnVersion}${tailSnapshot}"
-        api "com.github.peacetrue.tplngn:peacetrue-tplngn-spring:${peaceTplngnVersion}${tailSnapshot}"
-        api "com.github.peacetrue.tplngn:peacetrue-tplngn-gradle:${peaceTplngnVersion}${tailSnapshot}"
+        // 模板引擎相关
+        api "com.github.peacetrue.tplngn:peacetrue-tplngn-core:${peacetrueTplngnVersion}${tailSnapshot}"
+        api "com.github.peacetrue.tplngn:peacetrue-tplngn-velocity:${peacetrueTplngnVersion}${tailSnapshot}"
+        api "com.github.peacetrue.tplngn:peacetrue-tplngn-spring:${peacetrueTplngnVersion}${tailSnapshot}"
+        api "com.github.peacetrue.tplngn:peacetrue-tplngn-gradle:${peacetrueTplngnVersion}${tailSnapshot}"
 
-        api "com.github.peacetrue.template:peacetrue-template-antora:${peaceTemplateVersion}${tailSnapshot}"
-        api "com.github.peacetrue.template:peacetrue-template-gradle:${peaceTemplateVersion}${tailSnapshot}"
-        api "com.github.peacetrue.template:peacetrue-template-webmvc:${peaceTemplateVersion}${tailSnapshot}"
-        api "com.github.peacetrue.template:peacetrue-template-webflux:${peaceTemplateVersion}${tailSnapshot}"
-        api "com.github.peacetrue.template:peacetrue-template-reactadmin:${peaceTemplateVersion}${tailSnapshot}"
+        // 模板相关
+        api "com.github.peacetrue.template:peacetrue-template-antora:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.template:peacetrue-template-gradle:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.template:peacetrue-template-webmvc:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.template:peacetrue-template-webflux:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.template:peacetrue-template-module:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.template:peacetrue-template-reactadmin:${peacetrueTemplateVersion}${tailSnapshot}"
 
-        // 命令式编程
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-api-imperative:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-impl-imperative:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-controller-imperative:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-client-imperative:${peaceDictionaryVersion}${tailSnapshot}"
-        // 响应式编程
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-api-reactive:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-impl-reactive:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-controller-reactive:${peaceDictionaryVersion}${tailSnapshot}"
-        api "com.github.peacetrue.dictionary:peacetrue-dictionary-client-reactive:${peaceDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.openapitools:peacetrue-openapitools-asciidoc:${peacetrueOpenapitoolsVersion}${tailSnapshot}"
 
-        // 命令式编程
-        api "com.github.peacetrue.user:peacetrue-user-api-imperative:${peaceUserVersion}${tailSnapshot}"
-        api "com.github.peacetrue.user:peacetrue-user-impl-imperative:${peaceUserVersion}${tailSnapshot}"
-        api "com.github.peacetrue.user:peacetrue-user-controller-imperative:${peaceUserVersion}${tailSnapshot}"
-        api "com.github.peacetrue.user:peacetrue-user-client-imperative:${peaceUserVersion}${tailSnapshot}"
-        // 响应式编程
-        api "com.github.peacetrue.user:peacetrue-user-api-reactive:${peaceUserVersion}${tailSnapshot}"
-        api "com.github.peacetrue.user:peacetrue-user-impl-reactive:${peaceUserVersion}${tailSnapshot}"
-        api "com.github.peacetrue.user:peacetrue-user-controller-reactive:${peaceUserVersion}${tailSnapshot}"
-        api "com.github.peacetrue.user:peacetrue-user-client-reactive:${peaceUserVersion}${tailSnapshot}"
+        // 用户模块
+        api "com.github.peacetrue.user:peacetrue-user-service-api:${peacetrueUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-service-impl:${peacetrueUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-controller:${peacetrueUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-client:${peacetrueUserVersion}${tailSnapshot}"
+        api "com.github.peacetrue.user:peacetrue-user-authentication:${peacetrueUserVersion}${tailSnapshot}"
+        // 字典相关
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-service-api:${peacetrueDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-service-impl:${peacetrueDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-controller:${peacetrueDictionaryVersion}${tailSnapshot}"
+        api "com.github.peacetrue.dictionary:peacetrue-dictionary-client:${peacetrueDictionaryVersion}${tailSnapshot}"
+        // 文件模块
+        api "com.github.peacetrue.file:peacetrue-file-service-api:${peacetrueFileVersion}${tailSnapshot}"
+        api "com.github.peacetrue.file:peacetrue-file-service-impl:${peacetrueFileVersion}${tailSnapshot}"
+        api "com.github.peacetrue.file:peacetrue-file-controller:${peacetrueFileVersion}${tailSnapshot}"
+        // 附件模块
+        api "com.github.peacetrue.attachment:peacetrue-attachment-service-api:${peacetrueAttachmentVersion}${tailSnapshot}"
+        api "com.github.peacetrue.attachment:peacetrue-attachment-service-impl:${peacetrueAttachmentVersion}${tailSnapshot}"
+        api "com.github.peacetrue.attachment:peacetrue-attachment-controller:${peacetrueAttachmentVersion}${tailSnapshot}"
 
 
-        api "com.github.peacetrue.module.template:peacetrue-module-template-service-impl:${peaceModuleTemplateVersion}${tailSnapshot}"
-        api "com.github.peacetrue.module.template:peacetrue-module-template-controller:${peaceModuleTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.module.template:peacetrue-module-template-service-impl:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.module.template:peacetrue-module-template-controller:${peacetrueTemplateVersion}${tailSnapshot}"
 
-        api "com.github.peacetrue.module.template:peacetrue-module-template-service-api:${peaceModuleTemplateVersion}${tailSnapshot}"
-        api "com.github.peacetrue.module.template:peacetrue-module-template-service-impl:${peaceModuleTemplateVersion}${tailSnapshot}"
-        api "com.github.peacetrue.module.template:peacetrue-module-template-controller:${peaceModuleTemplateVersion}${tailSnapshot}"
-
-        api "com.github.peacetrue.module.file:peacetrue-module-file-service-api:${peaceModuleFileVersion}${tailSnapshot}"
-        api "com.github.peacetrue.module.file:peacetrue-module-file-service-impl:${peaceModuleFileVersion}${tailSnapshot}"
-        api "com.github.peacetrue.module.file:peacetrue-module-file-controller:${peaceModuleFileVersion}${tailSnapshot}"
+        api "com.github.peacetrue.module.template:peacetrue-module-template-service-api:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.module.template:peacetrue-module-template-service-impl:${peacetrueTemplateVersion}${tailSnapshot}"
+        api "com.github.peacetrue.module.template:peacetrue-module-template-controller:${peacetrueTemplateVersion}${tailSnapshot}"
 
         api "com.github.peacetrue.sample:sample-echo-api:${sampleEchoVersion}${tailSnapshot}"
         api "com.github.peacetrue.sample:sample-echo-impl:${sampleEchoVersion}${tailSnapshot}"
@@ -101,10 +109,11 @@ dependencies {
         api "javax.validation:validation-api:2.0.0.Final"
         api "javax.xml.bind:jaxb-api:2.3.0" //java 11
 
-        api "org.projectlombok:lombok:1.18.22"
-        api "org.slf4j:slf4j-api:1.7.36"
+        api "org.projectlombok:lombok:1.18.30"
+        api "org.slf4j:slf4j-api:1.7.36" // spring-boot 2.7
         api "ch.qos.logback:logback-classic:1.2.11"
-//        api "ch.qos.logback:logback-classic:1.3.4" // org.slf4j:slf4j-api:2.0.1
+        // api "org.slf4j:slf4j-api:2.0.6"
+        // api "ch.qos.logback:logback-classic:1.4.11"
         api "org.aspectj:aspectjweaver:1.9.0"
         api "org.aspectj:aspectjrt:1.9.0"
         api "org.reflections:reflections:0.9.11"
@@ -130,6 +139,7 @@ dependencies {
         api "com.fasterxml.jackson.dataformat:jackson-dataformat-properties:2.13.0"
         api "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.0"
         api "org.yaml:snakeyaml:1.33"
+//        api "org.yaml:snakeyaml:2.2"
         api "org.javassist:javassist:3.22.0-GA" // 修改方法内容
 
         api "io.projectreactor:reactor-core:3.4.24"
@@ -138,14 +148,38 @@ dependencies {
         api "com.playtika.reactivefeign:feign-reactor-core:3.2.6"
         api "com.playtika.reactivefeign:feign-reactor-webclient:3.2.6"
 
+        // https://swagger.io/docs/specification/data-models/
+        api 'io.swagger:swagger-models:1.6.12'
+        api 'io.swagger.core.v3:swagger-models:2.2.18'
+        api "io.swagger.core.v3:swagger-annotations:2.2.18"
+        api 'io.swagger.parser.v3:swagger-parser:2.1.18'
+        // implementation 'org.springdoc:springdoc-openapi-data-rest:1.7.0'
+        // implementation 'io.swagger.parser.v3:swagger-parser' // org.yaml.snakeyaml:2.2 slf4j-api 2.x
         // OpenAPI 3 文档支持：https://github.com/springdoc/springdoc-openapi
-        api "org.springdoc:springdoc-openapi-ui:1.6.11"
-        api "org.springdoc:springdoc-openapi-webflux-ui:1.6.11"
+        api "org.springdoc:springdoc-openapi-ui:1.7.0"
+        api "org.springdoc:springdoc-openapi-common:1.7.0"
+        api "org.springdoc:springdoc-openapi-webflux-ui:1.7.0"
         // 从 javadoc 读取接口描述：https://springdoc.org/#javadoc-support
-        api "org.springdoc:springdoc-openapi-javadoc:1.6.11"
+        api "org.springdoc:springdoc-openapi-javadoc:1.7.0"
+        api "org.springdoc:springdoc-openapi-security:1.7.0"
+        // https://github.com/dnault/therapi-runtime-javadoc
         api "com.github.therapi:therapi-runtime-javadoc:0.15.0"
         api "com.github.therapi:therapi-runtime-javadoc-scribe:0.15.0"
+        // https://github.com/OpenAPITools
+        api 'org.openapitools:openapi-generator:7.0.1'
+        api 'org.openapitools:openapi-generator-cli:7.0.1'
+        api 'com.github.spullara.mustache.java:compiler:0.9.10'
 
+        api "org.hibernate:hibernate-core:5.6.15.Final" // https://hibernate.org/orm/releases/5.6/
+        // https://hibernate.org/validator/releases/6.2/
+        api "org.hibernate.validator:hibernate-validator:6.2.5.Final"
+        // java.lang.NoClassDefFoundError: javax/el/ExpressionFactory https://stackoverflow.com/questions/24386771/javax-validation-validationexception-hv000183-unable-to-load-javax-el-express
+        api 'javax.el:javax.el-api:2.2.4'
+        api 'org.glassfish.web:javax.el:2.2.4'
+        api 'org.apache.tomcat.embed:tomcat-embed-el:9.0.48'
+        // TODO cdi 与 annotation-processor 的用途
+        api "org.hibernate.validator:hibernate-validator-cdi:6.2.5.Final"
+        api "org.hibernate.validator:hibernate-validator-annotation-processor:6.2.5.Final"
         api "com.h2database:h2:1.4.200" //Unsupported connection setting "DATABASE_TO_LOWER"
         api "mysql:mysql-connector-java:5.1.46"
         // 与 spi 不兼容: Publisher<Long> getRowsUpdated();
@@ -169,6 +203,8 @@ dependencies {
 
         api "net.logstash.logback:logstash-logback-encoder:7.2"
         api "org.springframework.cloud:spring-cloud-starter-security:2.2.5.RELEASE"
+        api 'org.springframework.security:spring-security-oauth2-authorization-server:0.4.4'
+//        api 'org.springframework.security:spring-security-oauth2-authorization-server:1.1.3' //jdk 17
 
         // 测试相关
         api "org.junit.jupiter:junit-jupiter-api:5.7.0"
@@ -200,8 +236,8 @@ publishing {
 
                 developers {
                     developer {
-                        id = "peace"
-                        name = "peace"
+                        id = "peacetrue"
+                        name = "peacetrue"
                         email = "xiayouxue@hotmail.com"
                     }
                 }

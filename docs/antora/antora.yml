@@ -9,28 +9,28 @@ asciidoc:
     app-name: peacetrue-dependencies
 
     tailSnapshot: -SNAPSHOT
-    peaceDependenciesVersion: 2.0.8
+    peacetrueDependenciesVersion: 2.0.8
 
-    peaceBeansVersion: 1.3.1
-    peaceCommonVersion: 1.2.0
-    peaceValidationVersion: 1.1.0
-    peacePersistenceVersion: 1.0.0
-    peaceServletVersion: 1.0.0
-    peaceJacksonVersion: 1.0.0
-    peaceVelocityVersion: 1.0.0
-    peaceTestVersion: 1.0.4
-    peaceSpringVersion: 1.0.3
-    peaceCryptographyVersion: 2.0.0
-    peaceResultVersion: 2.1.2
+    peacetrueBeansVersion: 1.3.1
+    peacetrueCommonVersion: 1.2.0
+    peacetrueValidationVersion: 1.1.0
+    peacetruePersistenceVersion: 1.0.0
+    peacetrueServletVersion: 1.0.0
+    peacetrueJacksonVersion: 1.0.0
+    peacetrueVelocityVersion: 1.0.0
+    peacetrueTestVersion: 1.0.4
+    peacetrueSpringVersion: 1.0.3
+    peacetrueCryptographyVersion: 2.0.0
+    peacetrueResultVersion: 2.1.2
 
     ## template
-    peaceTplngnVersion: 1.0.0
-    peaceTemplateVersion: 1.0.0
+    peacetrueTplngnVersion: 1.0.0
+    peacetrueTemplateVersion: 1.0.0
 
     ## modules
-    peaceModuleTemplateVersion: 1.0.0
-    peaceModuleFileVersion: 1.0.0
-    peaceDictionaryVersion: 1.0.0
+    peacetrueModuleTemplateVersion: 1.0.0
+    peacetrueModuleFileVersion: 1.0.0
+    peacetrueDictionaryVersion: 1.0.0
 
     ## samples
     sampleEchoVersion: 1.0.0

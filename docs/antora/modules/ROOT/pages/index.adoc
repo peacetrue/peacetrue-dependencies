@@ -56,11 +56,11 @@ Maven 语法：
 
 == 参与者（Who）
 
-. peace(xiayouxue@hotmail.com)
+. peacetrue(xiayouxue@hotmail.com)
 
 == 活动（When）
 
-初始提交于 2019-08-18，最近提交于 2022-11-01。
+初始提交于 2019-08-18，最近提交于 {docdate}。
 
 == 许可证（License）
 

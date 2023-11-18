@@ -9,57 +9,57 @@
 
 |com.github.peacetrue
 |peacetrue-beans
-|{peaceBeansVersion}
+|{peacetrueBeansVersion}
 |声明属性及相关数据对象接口
 
 |com.github.peacetrue
 |peacetrue-common
-|{peaceCommonVersion}
+|{peacetrueCommonVersion}
 |提供常用辅助工具类
 
 |com.github.peacetrue
 |peacetrue-test
-|{peaceTestVersion}
+|{peacetrueTestVersion}
 |提供测试工具类
 
 |com.github.peacetrue
 |peacetrue-cryptography
-|{peaceCryptographyVersion}
+|{peacetrueCryptographyVersion}
 |统一常用密码学方法为接口
 
 |com.github.peacetrue
 |peacetrue-validation
-|{peaceValidationVersion}
+|{peacetrueValidationVersion}
 |扩展 BeanValidation
 
 |com.github.peacetrue
 |peacetrue-servlet
-|{peaceServletVersion}
+|{peacetrueServletVersion}
 |扩展 Servlet
 
 |com.github.peacetrue
 |peacetrue-velocity
-|{peaceVelocityVersion}
+|{peacetrueVelocityVersion}
 |扩展 Velocity
 
 |com.github.peacetrue.spring
 |peacetrue-spring-*
-|{peaceSpringVersion}
+|{peacetrueSpringVersion}
 |扩展 Spring
 
 |com.github.peacetrue.result
 |peacetrue-result-*
-|{peaceResultVersion}
+|{peacetrueResultVersion}
 |规范响应结果
 
 |com.github.peacetrue.tplngn
 |peacetrue-tplngn-*
-|{peaceTplngnVersion}
+|{peacetrueTplngnVersion}
 |实现目录模板引擎
 
 |com.github.peacetrue.template
 |peacetrue-template-*
-|{peaceTemplateVersion}
+|{peacetrueTemplateVersion}
 |提供常用目录模板
 |===
 
