@@ -170,6 +170,11 @@ dependencies {
         api 'org.openapitools:openapi-generator-cli:7.0.1'
         api 'com.github.spullara.mustache.java:compiler:0.9.10'
 
+        api 'org.springframework.boot:spring-boot-gradle-plugin:2.7.0'
+        api 'org.springdoc:springdoc-openapi-gradle-plugin:1.8.0'
+        api 'org.openapitools:openapi-generator-gradle-plugin:6.6.0'
+        api 'org.asciidoctor:asciidoctor-gradle-jvm:3.3.2'
+
         api "org.hibernate:hibernate-core:5.6.15.Final" // https://hibernate.org/orm/releases/5.6/
         // https://hibernate.org/validator/releases/6.2/
         api "org.hibernate.validator:hibernate-validator:6.2.5.Final"
